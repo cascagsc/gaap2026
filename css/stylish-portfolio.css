@@ -1,0 +1,417 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.container {
+  /* max-width: 800px; */
+  margin: 0 auto;
+  padding: 10px; /* Add padding to the container */
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px; /* Increase space between rows */
+}
+
+.title {
+  flex: 0 0 250px; /* Increase width for titles */
+  text-align: left;
+  padding-right: 100px; /* Add spacing between title and content */
+}
+
+.title h2 {
+  margin: 5px 0 10px; /* Add bottom margin for titles */
+}
+
+.content {
+  flex: 1; /* Fills the remaining space */
+  text-align: left;
+}
+
+.content p {
+  margin: 10px 0; /* Increase space between paragraphs */
+}
+
+
+
+
+
+
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 60px 0 30px 0; /* Adds 30px space below h1 */
+    padding: 10px;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.text-vertical-center h2 {
+    margin: 30px 0 0px 0; /* Adds 30px space below h1 */
+    padding: 0;
+    font-size: 2.25em;
+    font-weight: 500;
+    color: white;
+}
+
+.text-vertical-center h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: white;
+}
+
+
+
+/* Custom Button Styles */
+
+.btn-dark {
+    color: #fff;
+    background-color: white;
+    border-color: white;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.75);
+    font-size: 18px;
+    margin: 4px 2px;
+    border-radius: 40px;
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.35);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+hr {
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* Custom Horizontal Rule */
+hr.small {
+    width: 76%;
+    margin: 1em auto;
+}
+
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/banner_v2.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+/* Callout */
+
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+/* Call to Action */
+
+/* .call-to-action {
+    padding: 50px 0;
+} */
+
+/* .call-to-action .btn {
+    margin: 10px;
+} */
+
+/* Map */
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+/*disable custom maps scrolling behaviour*/
+.scrolloff {
+    pointer-events: none;
+}
+
+
+/* Organizer Logo */
+
+.organizers-image {
+    text-align: left; /* Center align the image */
+    margin-top: 40px; /* Adjust spacing */
+    margin-left: 5px; /* Adjust spacing */
+  }
+  
+  .small-image {
+    max-width: 120px; /* Adjust the image width */
+    height: auto;
+  }
+
+/* Footer */
+
+footer {
+    padding: 40px 0;
+    background-color: #F5F5F5;
+}
+
+
+
+
+
+
+/* Mobile-specific styles */
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title {
+        flex: 1; /* Allow it to shrink */
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .text-vertical-center h1 {
+        font-size: 3em; /* Reduce size */
+    }
+
+    .btn-dark {
+        padding: 10px; /* Make buttons smaller */
+    }
+
+    .map {
+        height: 50vh; /* Use viewport height for flexibility */
+    }
+}
+
+.container, .row, .text-vertical-center {
+    max-width: 100%;
+    overflow-wrap: break-word; /* Ensures long words wrap instead of overflowing */
+    word-wrap: break-word;
+    white-space: normal;
+    margin: 0 auto; /* Centers the content */
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* CUSTOM */
+
+.tab-container {
+display: flex;
+gap: 10px;
+margin-bottom: 10px;
+}
+
+.tab-button {
+    background-color: rgba(0, 0, 0, 0.0);
+    color: black;
+    padding: 10px;
+    border: 1.25px solid rgba(0, 0, 0, 0.95);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1;
+}
+
+.tab-button.active,
+.tab-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}

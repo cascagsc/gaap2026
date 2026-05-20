@@ -1,0 +1,30 @@
+# Site settings
+title: GAAP (Guide to Applying for Astronomy Postdocs)
+email:
+description: > # this means to ignore newlines until "baseurl:"
+  A series of online workshops for prospective postdocs in astronomy,  
+  designed for senior graduate students in Canada looking to "bridge 
+  the gap" toward postdoctoral research positions and fellowships.  
+  Organized by the Canadian Astronomical Society (CASCA) Graduate 
+  Student Committee (GSC) in collaboration with the CASCA Postdoctoral
+  Committee.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+# User setting
+owner: CASCA Graduate Student Committee x CASCA Postdoctoral Committee
+email: cascagsc@gmail.com
+facebook_username:
+twitter_username:
+github_username: cascagsc
+address:
+  - line:
+  - line:
+  # Feel free to add more lines here
+copyright: CASCA Graduate Student Committee x CASCA Postdoctoral Committee
+
+# API settings
+google_api_key:
+
+# Build settings
+markdown: kramdown
